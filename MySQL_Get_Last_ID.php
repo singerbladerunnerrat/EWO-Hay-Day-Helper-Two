@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>MySQL Insert Data</title>
+		<title>MySQL Get Last ID</title>
 	</head>
 	<body>
 		<!--
-			https://www.w3schools.com/php/php_mysql_insert.asp
+			https://www.w3schools.com/php/php_mysql_insert_lastid.asp
 		-->
 
 		<?php
@@ -30,7 +30,8 @@
 
 				// use exec() because no results returned
 				$conn->exec($sql);
-				echo "New record created successfully.<br>";
+				$last_id = $conn->lastInsertId();
+				echo "New record created successfully. Last inserted ID is: " . $last_id . "<br>";
 			}
 			catch(PDOException $e)
 			{

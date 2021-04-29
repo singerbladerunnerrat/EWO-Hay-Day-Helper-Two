@@ -4,6 +4,10 @@
 		<title>PHP $_SERVER Superglobals</title>
 	</head>
 	<body>
+		<!--
+			https://www.w3schools.com/php/php_superglobals_server.asp
+		-->
+		
 		<table>
 			<tbody>
 				<tr>

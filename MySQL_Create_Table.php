@@ -4,6 +4,10 @@
 		<title>MySQL Create Table</title>
 	</head>
 	<body>
+		<!--
+			https://www.w3schools.com/php/php_mysql_create_table.asp
+		-->
+
 		<?php
 			$myfile = fopen("testfile.txt", "r") or die("Unable to open file!");
 
